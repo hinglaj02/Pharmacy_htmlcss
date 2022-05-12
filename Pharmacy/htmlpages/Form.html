@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="Stylesheet"
+      href="C:\Users\Hinglaj Tanwar Saini\Pharmacy\Css\Form.css"
+    />
+    <title>Test Form</title>
+  </head>
+  <body>
+      <div class = "main">
+        <div class = "container1">
+    <form id="myForm">
+      
+      <table>
+        <tr>
+          <td>
+            <h2>1. Your Contact Details</h2>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label class="lbox" for="fname">Full Name </label>
+          </td>
+          <td>
+            <label class="lbox" for="lname">Patient Id if exists </label>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <input class="tbox" type="text" id="fname" name="fname" />
+          </td>
+
+          <td>
+            <input class="tbox" type="text" id="lname" name="lname" />
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <label class="lbox" for="contactno">Contact Number </label>
+          </td>
+          <td>
+            <label class="lbox" for="email">Email Id </label>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <input class="tbox" type="text" id="contactno" name="contactno" />
+          </td>
+
+          <td>
+            <input class="tbox" type="text" id="email" name="email" />
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <h2>2.Address</h2>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label class="lbox" for="houseno">House Number </label>
+          </td>
+          <td>
+            <label class="lbox" for="street">Street</label>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <input class="tbox" type="text" id="street" name="street" />
+          </td>
+
+          <td>
+            <input class="tbox" type="text" id="houseno" name="houseno" />
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <label class="lbox" for="">Area</label>
+          </td>
+          <td>
+            <label class="lbox" for="district">District </label>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <input class="tbox" type="text" id="area" name="area" />
+          </td>
+          <td>
+             <select id="district" name="district">
+              <option value="Kachchh">Kachchh</option>
+              <option value="Leh">Leh</option>
+              <option value="Jaiselmer">Jaiselmer</option>
+            </select>
+          </td>
+        </tr>
+        
+        <tr>
+          <td>
+            <h2>3. Test Type</h2>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="checkbox" name="testtype1" value="CBC" />
+            <label for="testtype1">CBC </label>
+
+            <input type="checkbox" name="testtype2" value="Car" />
+            <label for="testtype2">Complete Urine</label>
+
+            <br />
+            <input
+              type="checkbox"
+              name="testtype3"
+              value="LipidProfile"
+              checked
+            />
+            <label for="testtype3">Lipid Profile </label>
+
+            <input type="checkbox" name="testtype4" value="Glucose" />
+            <label for="testtype4">Glucose Test </label>
+
+            <br />
+
+            <input type="checkbox" name="testtype5" value="tsh" />
+            <label for="testtype5">Thyroid Stimulating Hormone(TSH) </label>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <h2>4.Do You Want a Hard Copy?</h2>
+          </td>
+          <tr>
+          <td>
+            <input type="radio" id="rbtn" name="rbtn" value="rbtn" checked />
+            <label for="rbtn">Yes</label>
+            <input type="radio" id="rbtn" name="rbtn" value="rbtn" />
+            <label for="rbtn">No</label>
+          </td>
+          </tr>
+        </tr>
+
+        <tr>
+            <td>
+                <h2>5.Select Date and Time</h2>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                 <label for="date">Date</label>
+  <input type="date" id="date" name="date">
+            </td>
+            <td>
+                 <label for="appt">Time:</label>
+  <input type="time" id="appt" name="appt">
+            </td>
+        </tr>
+        <tr>
+
+        </tr>
+        <tr>
+
+        </tr>
+      </table>
+    </form>
+    </div>
+    <div class ="container2">
+
+<img src="C:\Users\Hinglaj Tanwar Saini\Pharmacy\Images\Lab-Test\lab-test.jpg" class = "testimg">
+
+    </div>
+
+</div>
+
+
+
+</br>
+<div class = "btncontainer">
+     <a href="C:\Users\Hinglaj Tanwar Saini\Pharmacy\htmlpages\IntroPage.html">
+       <button class="btn">Home</button>
+     </a>
+
+
+    <input type="button" value="Submit" onclick="msg()"  class = "btn"/>
+     <input type="button" onclick="myFunction()"   class = "btn" value="Reset form">
+</div>
+    <script>
+      function msg() {
+        alert("Form Submitted");
+      }
+    </script>
+    <script>
+function myFunction() {
+  document.getElementById("myForm").reset();
+}
+</script>
+  </body>
+</html>

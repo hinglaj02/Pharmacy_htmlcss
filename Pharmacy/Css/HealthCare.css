@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+}
+.btnhome {
+  background-color: mediumpurple;
+  height: 10%px;
+  width: 20%;
+  border: white;
+  color: white;
+  box-shadow: 3px lightgray;
+  text-decoration: none;
+  font-size: x-large;
+}
+.covid-item {
+  position: relative;
+  background-color: rgba(155, 200, 236, 0.3);
+  height: 155px;
+  width: 160px;
+  /* box-shadow: 5px 5px lightgray; */
+  display: inline-block;
+  margin: 0.5%;
+  transition: transform 0.2s;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.covid-item:hover {
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1);
+}
+.container-img {
+  position: absolute;
+  height: 105px;
+  width: 155px;
+  overflow: hidden;
+}
+.covidcare-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+  top: 22px;
+  left: 6px;
+}
+.headtag {
+  position: absolute;
+  top: 4px;
+  left: 3px;
+  padding: 1%;
+  font-size: small;
+}
+.covid-money {
+  position: absolute;
+  bottom: 0px;
+  background-color: rgba(155, 200, 236, 0.3);
+  width: 100%;
+  font-size: x-small;
+  text-align: left;
+}
+.money {
+  color: steelblue;
+  width: 100%;
+  font-weight: bold;
+  padding-left: 3px;
+}
+.btn {
+  color: rgb(255, 165, 0);
+  font-size: small;
+  border: 1px solid steelblue;
+  border-radius: 14%;
+  width: 100%;
+  padding: 1px;
+  background-color: rgb(187, 217, 242);
+}
+.btn:active {
+  background-color: rgb(250, 234, 230);
+  border: 3px solid rgb(0, 255, 76);
+}
+#myDIV {
+  border: 3px;
+}
